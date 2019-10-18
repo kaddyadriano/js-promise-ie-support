@@ -6,9 +6,9 @@ Use it just like the regular Promise class.
 ### Example: ###
 ```javascript
 var action = new Promise(function(resolve, reject){
-                            resolve();
-                            // or reject();
-                         });
+  resolve();
+  // or reject();
+});
 
 action.then(function(){
   console.log("resolved");
