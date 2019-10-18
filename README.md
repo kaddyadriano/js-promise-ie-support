@@ -1,14 +1,14 @@
 # Vanilla JS Promise. IE Support
-Currently IE does not support `Promise` that's thereson I had to create this simple vanilla JS Promise function. I check if `Promise` already exists so it's ok to drop it in your code and won't break anything.
+Currently IE does not support the native `Promise` class and that's the reason why I had to create this simple vanilla JS Promise function. The code will only be executed if `Promise` is undefined so it's ok to drop it in your code and won't break anything.
 
 Use it just like the regular Promise class.
 
 ### Example: ###
 ```javascript
 var action = new Promise(function(resolve, reject){
-  resolve();
-  // or reject();
-});
+                            resolve();
+                            // or reject();
+                         });
 
 action.then(function(){
   console.log("resolved");
